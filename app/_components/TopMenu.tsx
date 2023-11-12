@@ -45,8 +45,10 @@ const TopMenu = () => {
           {menuItems.map(({ id, label, href }) => (
             <li
               key={id}
-              className={`font-medium text-lg text-primary hover:text-primary-hover transition ease-in-out duration-300 mb-5 py-2 px-4 lg:mb-0 ${
-                pathname === href ? "border border-primary rounded-lg" : ""
+              className={`font-medium text-lg text-primary hover:text-primary-light transition ease-in-out duration-300 mb-5 py-2 px-4 lg:mb-0 ${
+                pathname === href
+                  ? "border border-primary rounded-lg text-blue-500"
+                  : ""
               }`}
             >
               <Link href={href}>{label}</Link>
@@ -58,7 +60,7 @@ const TopMenu = () => {
             {menuItems.map(({ id, label, href }) => (
               <li
                 key={id}
-                className={`font-medium text-lg text-primary hover:text-primary-hover transition ease-in-out duration-300 mb-5 py-2 px-4 lg:mb-0 ${
+                className={`font-medium text-lg text-primary hover:text-primary-light transition ease-in-out duration-300 mb-5 py-2 px-4 lg:mb-0 ${
                   pathname === href ? "border border-primary rounded-lg" : ""
                 }`}
               >

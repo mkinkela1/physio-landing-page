@@ -1,3 +1,4 @@
+import Footer from "@/app/_components/Footer";
 import TopMenu from "@/app/_components/TopMenu";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -17,9 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-100 w-screen`}>
+      <body className={`${inter.className} bg-gray-100`}>
         <TopMenu />
         <div className="container max-w-screen-xl mx-auto px-4">{children}</div>
+        <Footer />
       </body>
     </html>
   );

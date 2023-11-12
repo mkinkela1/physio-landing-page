@@ -7,8 +7,10 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#22C55E",
-          hover: "#15803d",
+          // DEFAULT: "#22C55E",
+          DEFAULT: "#3B82F6",
+          light: "#60a5fa",
+          // hover: "#15803d",
         },
       },
     },
