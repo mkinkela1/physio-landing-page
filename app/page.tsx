@@ -1,10 +1,13 @@
 export default function Home() {
   return (
     <>
-      <header className="flex-col xl:flex-row flex justify-between bg-gray-100">
+      <header className="flex-col xl:flex-row flex justify-between bg-gray-100 py-10">
         <div className="mx-auto text-center xl:text-left xl:mx-0 mb-20 xl:mb-0">
           <h1 className="font-bold text-gray-700 text-3xl md:text-6xl leading-tight mb-10">
-            A digital <br /> Product design <br /> Agency
+            Dobro došli
+            <br /> na stranice
+            <br />
+            <div className="text-primary">Manus Maris!</div>
           </h1>
 
           <p className="font-normal text-gray-500 text-sm md:text-lg mb-10">
@@ -16,21 +19,7 @@ export default function Home() {
               href="#"
               className="px-8 py-3 bg-primary font-medium text-white text-md md:text-lg rounded-md hover:bg-green-700 transition ease-in-out duration-300 mr-14"
             >
-              Our story
-            </a>
-
-            <a
-              href="#"
-              className="hidden lg:block font-normal text-gray-500 text-lg mr-8"
-            >
-              Watch Showreel
-            </a>
-
-            <a
-              href="#"
-              className="px-4 py-4 text-gray-300 border-2 border-gray-200 rounded-full"
-            >
-              <i data-feather="play"></i>
+              Naša priča
             </a>
           </div>
         </div>
