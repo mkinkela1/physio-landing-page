@@ -8,7 +8,7 @@ const config: Config = {
       colors: {
         primary: {
           // DEFAULT: "#22C55E",
-          DEFAULT: "#3B82F6",
+          DEFAULT: "#2b3c8e",
           light: "#60a5fa",
           // hover: "#15803d",
         },

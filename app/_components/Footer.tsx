@@ -53,7 +53,7 @@ const Footer = () => {
       </div>
       <div className="bg-gray-100 py-4">
         <p className="font-normal text-gray-400 text-md text-center mt-5">
-          &copy; 2023 . All rights reserved.
+          &copy; 2023 Manus maris. All rights reserved.
         </p>
       </div>
     </footer>

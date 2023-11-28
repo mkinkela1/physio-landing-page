@@ -18,6 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg" />
+      </head>
       <body className={`${inter.className} bg-gray-100`}>
         <TopMenu />
         <div className="container max-w-screen-xl mx-auto px-4">{children}</div>

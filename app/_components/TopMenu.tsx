@@ -11,7 +11,7 @@ const menuItems: TMenu = [
   { id: "about", label: "O nama", href: "/about" },
   { id: "treatmants", label: "Tretmani", href: "/treatmants" },
   { id: "blog", label: "Blog", href: "/blog" },
-  { id: "price-list", label: "Cjenik", href: "/price-list" },
+  { id: "pricing", label: "Cjenik", href: "/pricing" },
   { id: "contact", label: "Kontakt", href: "/contact" },
 ];
 
@@ -23,15 +23,10 @@ const TopMenu = () => {
 
   return (
     <nav className="flex-wrap lg:flex items-center justify-between bg-white w-full">
-      <div className="container max-w-screen-lg m-auto flex justify-between w-full p-4 py-2 lg:py-4 flex-col lg:flex-row">
+      <div className="container max-w-screen-xl m-auto flex justify-between w-full p-4 py-2 lg:py-4 flex-col lg:flex-row">
         <div className="flex items-center justify-between lg:mb-0">
           <Link href="/">
-            <Image
-              src="assets/image/navbar-logo.svg"
-              alt="Logo"
-              width="50"
-              height="50"
-            />
+            <Image src="/logo.svg" alt="Logo" width="200" height="50" />
           </Link>
 
           <button
@@ -45,10 +40,10 @@ const TopMenu = () => {
           {menuItems.map(({ id, label, href }) => (
             <li
               key={id}
-              className={`font-medium text-lg text-primary hover:text-primary-light transition ease-in-out duration-300 mb-5 py-2 px-4 lg:mb-0 ${
+              className={`font-medium text-lg transition ease-in-out duration-300 mb-5 py-2 px-2 lg:mb-0 ${
                 pathname === href
-                  ? "border border-primary rounded-lg text-blue-500"
-                  : ""
+                  ? "text-primary hover:text-primary-light"
+                  : "text-primary-light hover:text-primary-light"
               }`}
             >
               <Link href={href}>{label}</Link>
@@ -60,8 +55,10 @@ const TopMenu = () => {
             {menuItems.map(({ id, label, href }) => (
               <li
                 key={id}
-                className={`font-medium text-lg text-primary hover:text-primary-light transition ease-in-out duration-300 mb-5 py-2 px-4 lg:mb-0 ${
-                  pathname === href ? "border border-primary rounded-lg" : ""
+                className={`font-medium text-lg transition ease-in-out duration-300 mb-5 py-2 px-4 lg:mb-0 ${
+                  pathname === href
+                    ? "text-primary hover:text-primary"
+                    : "text-primary-light hover:text-primary"
                 }`}
               >
                 <Link href={href}>{label}</Link>
