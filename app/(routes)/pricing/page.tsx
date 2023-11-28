@@ -16,7 +16,7 @@ const Pricing = () => {
           },
           {
             item: "Manualna limfna drenaža",
-            prices: [null, null, 25, 35, 45],
+            prices: [null, null, 25, 35],
           },
           {
             item: "Sportska masaža",
