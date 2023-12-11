@@ -17,7 +17,7 @@ export default function Home() {
           <div className="flex items-center justify-center lg:justify-start">
             <a
               href="#"
-              className="px-8 py-3 bg-primary font-medium text-white text-md md:text-lg rounded-md hover:bg-green-700 transition ease-in-out duration-300 mr-14"
+              className="px-8 py-3 bg-primary font-medium text-white text-md md:text-lg rounded-md hover:bg-primary-light transition ease-in-out duration-300 mr-14"
             >
               Naša priča
             </a>
