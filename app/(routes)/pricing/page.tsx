@@ -58,7 +58,7 @@ const Pricing = () => {
             planPrice: 10,
           },
           {
-            item: "Izrada nutricionističkog plana prehrane (1 dan)",
+            item: "Izrada nutricionističkog plana prehrane (7 dana)",
             planPrice: 60,
           },
         ]}
